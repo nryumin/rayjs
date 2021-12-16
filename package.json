@@ -1,0 +1,34 @@
+{
+  "name": "rayjs",
+  "version": "1.0.0",
+  "description": "Library for manipulating numeric line segments and rays",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest",
+    "test2": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nryumin/rayjs.git"
+  },
+  "keywords": [
+    "ray",
+    "line-segment"
+  ],
+  "author": "Nikita Ryumin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nryumin/rayjs/issues"
+  },
+  "homepage": "https://github.com/nryumin/rayjs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "babel-jest": "^27.4.5",
+    "jest": "^27.4.5"
+  },
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}

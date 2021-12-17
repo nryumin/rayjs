@@ -18,7 +18,7 @@ export function intersects(i1: NumInterval, i2: NumInterval): boolean {
 }
 
 // i1 includes i2
-export function includes(i1: NumInterval, i2: NumInterval): boolean {
+export function contains(i1: NumInterval, i2: NumInterval): boolean {
   const [start1, end1] = parseInterval(i1);
   const [start2, end2] = parseInterval(i2);
 

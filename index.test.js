@@ -2,7 +2,7 @@ import {jest} from '@jest/globals';
 import {
   containsPoint,
   formatInterval,
-  includes,
+  contains,
   intersection,
   intersects, mask,
   NumInterval,
@@ -83,7 +83,7 @@ import {
 
   cases.forEach(([i1,i2,res])=>{
     test(`Contains ${JSON.stringify(i1)} and ${JSON.stringify(i2)}`, () => {
-      expect(includes(i1,i2)).toBe(res);
+      expect(contains(i1,i2)).toBe(res);
     });
   });
 }
@@ -180,7 +180,7 @@ import {
     [25,28]
   ];
 
-  test(`Mak ${JSON.stringify(i)} with ${JSON.stringify(masks)}`, () => {
+  test(`Mask ${JSON.stringify(i)} with ${JSON.stringify(masks)}`, () => {
     const expected = [[5,6],[7,10],[18,20]]
     expect(mask(i,masks)).toEqual(expected);
   });
@@ -194,7 +194,7 @@ import {
     [18,null],
   ];
 
-  test(`Mak ${JSON.stringify(i)} with ${JSON.stringify(masks)}`, () => {
+  test(`Mask ${JSON.stringify(i)} with ${JSON.stringify(masks)}`, () => {
     const expected = [[5,6],[7,10],[18,20]]
     expect(mask(i,masks)).toEqual(expected);
   });

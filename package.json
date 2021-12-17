@@ -4,8 +4,7 @@
   "description": "Library for manipulating numeric line segments and rays",
   "main": "index.ts",
   "scripts": {
-    "test": "jest",
-    "test2": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

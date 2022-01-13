@@ -1,10 +1,17 @@
 {
-  "name": "rayjs",
-  "version": "1.0.0",
+  "name": "@nryumin/rayjs",
+  "version": "1.1.0",
   "description": "Library for manipulating numeric line segments and rays",
-  "main": "index.ts",
+  "main": "src/index.ts",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -25,9 +32,10 @@
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-typescript": "^7.16.5",
     "babel-jest": "^27.4.5",
-    "jest": "^27.4.5"
-  },
-  "dependencies": {
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.5.4"
   }
 }

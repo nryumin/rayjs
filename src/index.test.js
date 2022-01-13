@@ -7,7 +7,7 @@ import {
   intersects, mask,
   NumInterval,
   parseInterval, union
-} from "./index.ts";
+} from "./index";
 
 //parse test
 {
